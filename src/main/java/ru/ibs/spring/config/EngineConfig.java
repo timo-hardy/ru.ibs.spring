@@ -12,13 +12,12 @@ import java.util.Map;
 @Configuration
 public class EngineConfig {
     @Bean
-    public Map<String, Engine> mapService () {
+    public Map<String, Engine> mapService() {
         Map<String, Engine> engineMap = new HashMap<>();
         engineMap.put("petrol", new PetrolEngineImpl());
         engineMap.put("diesel", new DieselEngineImpl());
 
         return engineMap;
     }
+}
 
-}
-}
